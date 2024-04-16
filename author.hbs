@@ -5,6 +5,8 @@ This template is used for the author page.
 {{!-- This block preloads specific assets for the author page --}}
 {{#contentFor "preload"}}
   <link rel="preload" href="{{asset "css/listing.css"}}" as="style" />
+  {{!-- Stop search engines from indexing --}}
+  <meta name="robots" content="noindex, follow">
 {{/contentFor}}
 
 {{!-- This block loads specific styles for the author page --}}
@@ -75,7 +77,7 @@ into the {body} of the default.hbs template --}}
       </div>
     </section>
   {{/author}}
-  
+
   <div class="l-content">
     <div class="l-wrapper" data-animate="fade-up">
       <div class="l-grid centered">
