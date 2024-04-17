@@ -8,6 +8,10 @@ It can be used also as the home page or the default page.
   <link rel="preload" href="{{asset "css/home.css"}}" as="style" />
   <link rel="preload" href="{{asset "css/listing.css"}}" as="style" />
   <link rel="preload" href="{{asset "js/home.js"}}" as="script" />
+  {{#if pagination.prev}}
+    {{!-- Stop search engines from indexing --}}
+    <meta name="robots" content="noindex, follow">
+  {{/if}}
 {{/contentFor}}
 
 {{!-- This block loads specific styles for the index page --}}
