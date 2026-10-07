@@ -64,7 +64,7 @@
   "demo": "https://liebling.eduardogomez.io",
   "description": "Beautiful and clean theme that is easy and comfortable to use.",
   "engines": {
-    "ghost": ">=5.0.0"
+    "ghost": ">=5.118.0"
   },
   "gpm": {
     "type": "theme",
